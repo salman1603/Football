@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/*-------------- -----------------------------Header Section ------------------ -------------------------*/
+
+
+
+.head{
+    background-color: blueviolet;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 1160px;
+    height: 44px;
+    padding-top: 52px;
+}
+.login{
+    width: 123px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: white;
+    text-align: center;
+    
+}
+.fas .fa-sign-in-alt{
+    width:123px;
+    height:44px;
+}
+ .navigation span a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+    
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.text-section{
+    width: 485px;
+    height: 230px;
+    padding-left: 5%;
+    padding-top: 207px;
+}
+.text-section h3{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF ;
+}
+.text-section h3:hover{
+    text-decoration:underline;
+    text-decoration-color: #3DBAFD;
+    -moz-text-decoration-color: #3DBAFD;
+    text-decoration-thickness: 3px;
+}
+.btn{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding:10px;
+}
+.btn:hover{
+    background-color: rgb(26, 24, 24);
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    transition:transform 1s ease-in-out;
+    -webkit-transition:transform 1s ease-in-out;
+    -moz-transition:transform 1s ease-in-out;
+    -ms-transition:transform 1s ease-in-out;
+    -o-transition:transform 1s ease-in-out;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+.banner-section{
+    width: 50%;
+    padding-top: 150px;
+    padding-bottom: 86px;
+}
+.banner-section img{
+    width: 556.01px;
+    height: 438px;
+}
+/* --------------------------------------------Header Section End -------------------------------------------- */
+
+
+
+/* -----------------------------------Main Section start ------------------------------------ */
+
+.top-players{
+    width: 1050px;
+    margin: 0 auto;
+    
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    margin-top: 70px;
+}
+
+.player{
+    width: 330px;
+    height: 474px;
+    margin-bottom: 27px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);;
+}
+.photo img{
+    width: 300px;
+    height: 256px;
+   padding:15px
+}
+.player-details{
+    width: 300px;
+    height: 154px;
+    padding: 15px;
+}
+.photo-detail h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.photo-detail p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    padding-top: 10px;
+    text-align: left;
+}
+/* ----------------------------------------------Main Section End------------------------------------- */
+
+
+
+
+/*-------------------------------------------Latest Video Seciton Start------------------------- */
+
+
+.video-section h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+    
+}
+/* --------------------------------------------Latest Video Section End------------------------------- */
+
+
+
+/* ---------------------------------------------Get in Touch Start------------------------------------------- */
+
+
+.get-in-touch{
+    background-color:rgba(0, 0, 0, 0.15);
+    padding-top:30px;
+    margin-top: 100px;
+}
+.get-in-touch h2{
+    padding: 10px;
+}
+.form{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.form input ,textarea{
+    font-size: 15px;
+    width: 80%;
+    padding:5px;
+}
+.form button{
+    width: 84%;
+    padding:5px;
+    background-color: lightslategray;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------Get in touch End ------------------------------ */
+
+
+
+
+
+
+/* --------------------------------------------Footer ---------------------------------------*/
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 63px;
+    
+}
+.footer-img img{
+    width: 413px;
+    height:110px;
+}
+
+.footer-links a img{
+    width: 32px;
+    height: 32px;
+}
+.footer-links,p{
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* -----------------------------------------Footer End  */
+
+
+
+/*--------------------------------------- Media Queries Start ----------------------------- */
+
+
+
+/* Mobile Devices  */
+
+@media (max-width: 688px) { 
+    
+    .navigation{
+        display: block;
+         margin-left: 40px;
+        
+    }
+    .container{
+      display: block;
+    }
+    .text-section, .banner-section img{
+       margin-left: 50px; 
+       justify-items: center;
+    }
+    
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:155px;
+        
+    }
+    
+    .video{
+      flex-direction: column;
+      grid-row-gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+ }
