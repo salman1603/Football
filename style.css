@@ -76,6 +76,10 @@
     color: #FFFFFF;
     padding:10px;
 }
+.btn a{
+    text-decoration: none;
+    color: white;
+}
 .btn:hover{
     background-color: rgb(26, 24, 24);
     transform: scale(0.75);
